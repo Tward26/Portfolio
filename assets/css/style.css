@@ -1,0 +1,79 @@
+body{
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777777;
+}
+
+nav{
+  background-color: #ffffff;
+}
+
+h1{
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4aaaa5;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.footer{
+  background-color: #777777;
+  border-top: 8px solid #4aaaa5;
+}
+
+.work {
+  position: relative;
+}
+
+.mainImage{
+  max-width: 400px;
+  width: 100%;
+}
+
+#profilePic{
+    max-width: 250px;
+    width: 100%;
+}
+
+.img-text {
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* How to change from container to container fluid for smaller sizes breakpoints
+https://stackoverflow.com/questions/35991441/bootstrap-container-fluid-for-xs-sm?rq=1 
+
+Remove margins outside of card by negating padding on columns and margins on rows*/
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+  .col-12{
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .mainImage{
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
